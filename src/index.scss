@@ -1,0 +1,21 @@
+:root {
+  --font-primary: "Raleway", sans-serif; // 500(med), 600(semi),700(bold), 900(black)
+  --font-secondary: "Roboto", sans-serif; //400(reg), 500(med), 700(bold)
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: var(--font-secondary);
+}
