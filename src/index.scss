@@ -1,6 +1,26 @@
 :root {
   --font-primary: "Raleway", sans-serif; // 500(med), 600(semi),700(bold), 900(black)
   --font-secondary: "Roboto", sans-serif; //400(reg), 500(med), 700(bold)
+
+  --alert-fill-color: linear-gradient(top, to bottom, #de4313, #fec163);
+  --alert-border-color: linear-gradient(top, to bottom, #de4313, #fec163);
+
+  --text-color-1: #d9d9d9;
+  --text-color-2: #3c4852;
+  --text-color-3: #bebebe;
+  --text-color-4: #ffffff;
+
+  --success-color-1: #47ba68;
+  --success-color-2: #d7eddd;
+
+  --danger-color-1: #f77171;
+  --danger-color-1: #ff0000;
+
+  --primary-color-1: #47ba68;
+  --primary-color-2: linear-gradient(top, to bottom, #0048ff, #0096ff);
+
+  --disable-color: #e7e7e7;
+  --alert-text-color: #de4313;
 }
 
 *,
@@ -18,4 +38,8 @@ html {
 body {
   font-size: 1.6rem;
   font-family: var(--font-secondary);
+}
+
+.app {
+  background: url("./assests/Background.png");
 }
