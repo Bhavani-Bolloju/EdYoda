@@ -2,7 +2,7 @@ import React from "react";
 import classes from "./Header.module.scss";
 
 function Header() {
-  return <div>header nav</div>;
+  return <header className={classes["header"]}></header>;
 }
 
 export default Header;

@@ -5,10 +5,11 @@
   --alert-fill-color: linear-gradient(top, to bottom, #de4313, #fec163);
   --alert-border-color: linear-gradient(top, to bottom, #de4313, #fec163);
 
-  --text-color-1: #d9d9d9;
-  --text-color-2: #3c4852;
+  --text-color-1: #3c4852;
+  --text-color-2: #222;
   --text-color-3: #bebebe;
-  --text-color-4: #ffffff;
+  --text-color-4: #d9d9d9;
+  --text-color-5: #ffffff;
 
   --success-color-1: #47ba68;
   --success-color-2: #d7eddd;
@@ -17,7 +18,7 @@
   --danger-color-1: #ff0000;
 
   --primary-color-1: #47ba68;
-  --primary-color-2: linear-gradient(top, to bottom, #0048ff, #0096ff);
+  --primary-color-2: linear-gradient(to right, #0096ff 70%, #0048ffc4 90%);
 
   --disable-color: #e7e7e7;
   --alert-text-color: #de4313;
@@ -33,13 +34,19 @@
 
 html {
   font-size: 62.5%;
+  height: 100%;
 }
 
 body {
   font-size: 1.6rem;
   font-family: var(--font-secondary);
+  min-height: 100%;
+  color: #fff;
 }
 
 .app {
+  height: 100%;
+  min-width: 100%;
   background: url("./assests/Background.png");
+  object-fit: cover;
 }
