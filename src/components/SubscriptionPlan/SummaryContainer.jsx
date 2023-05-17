@@ -1,6 +1,5 @@
 import React from "react";
 import classes from "./SummaryContainer.module.scss";
-import clock from "../../assests/clock-icon.svg";
 
 function SummaryContainer() {
   return (

@@ -60,6 +60,15 @@ function SubscriptionPlan() {
           ))}
         </div>
         <SummaryContainer />
+
+        <div className={classes["buttons-container"]}>
+          <button className={`${classes["btn"]} ${classes["btn--outline"]}`}>
+            cancel
+          </button>
+          <button className={`${classes["btn"]} ${classes["btn--fill"]}`}>
+            proceed to pay
+          </button>
+        </div>
       </form>
     </div>
   );
