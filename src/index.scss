@@ -10,15 +10,21 @@
   --text-color-3: #bebebe;
   --text-color-4: #d9d9d9;
   --text-color-5: #ffffff;
+  --text-color-6: #0096ff;
+  --text-color-7: #0048ffc4;
 
   --success-color-1: #47ba68;
   --success-color-2: #d7eddd;
 
   --danger-color-1: #f77171;
-  --danger-color-1: #ff0000;
+  --danger-color-2: #ff0000;
 
   --primary-color-1: #47ba68;
-  --primary-color-2: linear-gradient(to right, #0096ff 70%, #0048ffc4 90%);
+  --primary-color-2: linear-gradient(
+    to right,
+    var(--text-color-6) 70%,
+    var(--text-color-7) 90%
+  );
 
   --disable-color: #e7e7e7;
   --alert-text-color: #de4313;
@@ -45,8 +51,8 @@ body {
 }
 
 .app {
-  height: 100%;
   min-width: 100%;
   background: url("./assests/Background.png");
+  background-size: cover;
   object-fit: cover;
 }

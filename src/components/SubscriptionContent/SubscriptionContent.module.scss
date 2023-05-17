@@ -1,0 +1,51 @@
+.subscription-content {
+  width: 55%;
+
+  h1 {
+    font-size: 5rem;
+    font-weight: 600;
+    font-family: var(--font-primary);
+
+    .price {
+      font-family: var(--font-secondary);
+      &--highlight {
+        color: var(--text-color-6);
+        font-weight: 600;
+      }
+    }
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-top: 3rem;
+    gap: 3rem;
+  }
+
+  .item {
+    display: flex;
+    align-items: center;
+    line-height: normal;
+    gap: 5rem;
+    img {
+      width: 6.8rem;
+      height: 6.8rem;
+    }
+
+    &__content {
+      font-size: 3.2rem;
+      display: flex;
+      gap: 1rem;
+
+      &--highlight {
+        color: var(--text-color-6);
+        font-weight: 600;
+      }
+    }
+
+    &__reverse {
+      flex-direction: row-reverse;
+    }
+  }
+}

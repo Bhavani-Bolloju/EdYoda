@@ -1,13 +1,14 @@
 import React from "react";
 import classes from "./Main.module.scss";
-import Header from "../Header/Header";
+import SubscriptionContent from "../SubscriptionContent/SubscriptionContent";
+import SubscriptionPlan from "../SubscriptionPlan/SubscriptionPlan";
 
 function Main() {
   return (
-    <div className={classes.main}>
-      <div>header</div>
-      <div>form</div>
-    </div>
+    <main className={classes.main}>
+      <SubscriptionContent />
+      <SubscriptionPlan />
+    </main>
   );
 }
 
