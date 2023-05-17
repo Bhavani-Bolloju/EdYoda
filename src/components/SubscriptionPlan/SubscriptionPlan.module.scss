@@ -19,6 +19,8 @@
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+    border-bottom: 2px solid var(--text-color-3);
+    padding-bottom: 2rem;
   }
 
   &__input-control {
@@ -38,19 +40,6 @@
       width: 3.2rem;
       border: 2px solid var(--text-color-3);
       border-radius: 50%;
-
-      // &::after {
-      //   content: "*";
-      //   width: 100%;
-      //   height: 100%;
-      //   display: flex;
-      //   align-items: center;
-      //   justify-content: center;
-      // }
-    }
-
-    input {
-      // display: none;
     }
 
     .subscription {

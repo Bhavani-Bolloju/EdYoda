@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import classes from "./SubscriptionPlan.module.scss";
 import FormProgressBar from "./FormProgressBar";
 import TextField from "./TextField";
+import SummaryContainer from "./SummaryContainer";
 
 const plans = [
   {
@@ -58,6 +59,7 @@ function SubscriptionPlan() {
             />
           ))}
         </div>
+        <SummaryContainer />
       </form>
     </div>
   );

@@ -2,8 +2,12 @@
   --font-primary: "Raleway", sans-serif; // 500(med), 600(semi),700(bold), 900(black)
   --font-secondary: "Roboto", sans-serif; //400(reg), 500(med), 700(bold)
 
-  --alert-fill-color: linear-gradient(top, to bottom, #de4313, #fec163);
-  --alert-border-color: linear-gradient(top, to bottom, #de4313, #fec163);
+  --alert-fill-color: linear-gradient(
+    to right,
+    hsla(14, 84%, 47%, 0.2),
+    rgba(254, 192, 99, 0.2)
+  );
+  --alert-border-color: linear-gradient(to right, #de4313, #fec163);
 
   --text-color-1: #3c4852;
   --text-color-2: #222;
