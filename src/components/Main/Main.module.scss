@@ -4,4 +4,15 @@
   align-items: flex-start;
   justify-content: space-between;
   padding: 15rem 10rem;
+  gap: 2rem;
+
+  @media screen and (max-width: 1300px) {
+    padding: 15rem 8rem;
+  }
+  @media screen and (max-width: 850px) {
+    flex-direction: column-reverse;
+    width: 90%;
+    margin: auto;
+    gap: 10rem;
+  }
 }

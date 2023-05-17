@@ -1,6 +1,10 @@
 .subscription-content {
   width: 55%;
 
+  @media screen and (max-width: 850px) {
+    width: 100%;
+  }
+
   h1 {
     font-size: 5rem;
     font-weight: 600;
@@ -19,8 +23,12 @@
     display: flex;
     flex-direction: column;
     list-style: none;
-    margin-top: 3rem;
+    margin-top: 5rem;
     gap: 3rem;
+
+    @media screen and (max-width: 850px) {
+      margin-left: 2rem;
+    }
   }
 
   .item {

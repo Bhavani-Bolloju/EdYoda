@@ -3,7 +3,7 @@ import classes from "./SubscriptionPlan.module.scss";
 import FormProgressBar from "./FormProgressBar";
 import TextField from "./TextField";
 import SummaryContainer from "./SummaryContainer";
-
+import payment from "../../assests/Razorpay-Icon.png";
 const plans = [
   {
     months: 12,
@@ -69,6 +69,12 @@ function SubscriptionPlan() {
             proceed to pay
           </button>
         </div>
+
+        <img
+          src={payment}
+          alt="razorpay icon"
+          className={classes["payment-image"]}
+        />
       </form>
     </div>
   );
