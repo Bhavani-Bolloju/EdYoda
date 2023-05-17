@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import classes from "./SubscriptionPlan.module.scss";
 import FormProgressBar from "./FormProgressBar";
 import TextField from "./TextField";
@@ -14,23 +14,29 @@ const plans = [
     months: 12,
     totalPrice: 179,
     perMonth: 15,
-    status: "active"
+    status: ""
   },
   {
     months: 6,
     totalPrice: 149,
     perMonth: 25,
-    status: "active"
+    status: ""
   },
   {
     months: 3,
     totalPrice: 99,
     perMonth: 33,
-    status: "active"
+    status: ""
   }
 ];
 
 function SubscriptionPlan() {
+  const [selectedPlan, setSelectedPlan] = useState(0);
+
+  const selectPlanHandler = function (id) {
+    setSelectedPlan(id);
+  };
+
   return (
     <div className={classes["subscriptionPlan"]}>
       <form className={classes.form}>
@@ -45,6 +51,8 @@ function SubscriptionPlan() {
               pricePerMonth={plan.perMonth}
               months={plan.months}
               status={plan.status}
+              onSelect={selectPlanHandler.bind(null, i)}
+              selectedPlan={selectedPlan}
               id={i}
               key={i}
             />

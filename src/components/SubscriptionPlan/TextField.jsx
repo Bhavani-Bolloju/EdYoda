@@ -23,18 +23,29 @@ function TextField({
   pricePerMonth,
   id,
   months,
-  status = "",
-  name
+  status,
+  onSelect,
+  selectedPlan
 }) {
+  let activeClassName = `${classes["form__input-control"]} ${classes[status]}`;
+
+  let checkValue = false;
+
+  if (status == "expired") {
+    checkValue = true;
+  }
+
+  if (status !== "expired" && selectedPlan == id) {
+    checkValue = true;
+  }
+
+  if (status !== "expired" && checkValue) {
+    activeClassName = `${classes["form__input-control"]} ${classes["active"]}`;
+  }
+
   return (
-    <div className={`${classes["form__input-control"]} ${classes[status]}`}>
-      <input
-        type="radio"
-        id={id}
-        name="plan"
-        // checked={status === "expired" ? true : false}
-        onChange={(e) => console.log(e.target)}
-      />
+    <div className={activeClassName}>
+      <input type="radio" id={id} onChange={onSelect} checked={checkValue} />
       <div className={classes["check-box"]}></div>
       <label htmlFor={id} className={classes["subscription"]}>
         <div className={classes["subscription__period"]}>

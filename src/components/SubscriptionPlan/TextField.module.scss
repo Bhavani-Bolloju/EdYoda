@@ -40,6 +40,14 @@
       }
     }
 
+    &.active {
+      background-color: var(--success-color-2);
+      border: 2px solid var(--success-color-1);
+      .check-box {
+        border: none;
+      }
+    }
+
     &.expired {
       color: var(--text-color-3);
       background-color: var(--fill-color-1);
@@ -52,6 +60,7 @@
           border-radius: 50%;
           position: absolute;
           top: 50%;
+          border: none;
           left: 50%;
           transform: translate(-50%, -50%);
         }
