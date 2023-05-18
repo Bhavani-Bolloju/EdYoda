@@ -31,11 +31,13 @@ const plans = [
   }
 ];
 
-function SubscriptionPlan() {
+function SubscriptionPlan({ onDiscount }) {
   const [selectedPlan, setSelectedPlan] = useState(0);
 
   const selectPlanHandler = function (id) {
     setSelectedPlan(id);
+
+    onDiscount(plans[id].totalPrice);
   };
 
   return (

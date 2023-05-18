@@ -1,7 +1,6 @@
 import React from "react";
 import classes from "./SubscriptionContent.module.scss";
 import live from "../../assests/llive-Icon.svg";
-import clock from "../../assests/clock-icon.svg";
 import time from "../../assests/time-icon.svg";
 import scholarship from "../../assests/scholarship-icon.svg";
 import courses from "../../assests/courses-icon.svg";
@@ -25,14 +24,18 @@ const ListItem = function ({ image, text, number, className = "" }) {
   );
 };
 
-function SubscriptionContent() {
+function SubscriptionContent({ finalPrice }) {
   return (
     <section className={classes["subscription-content"]}>
       <h1>
         Access curated courses worth
-        <span className={classes["price"]}> &#8377; 18,500 </span>at just{" "}
+        <span className={`${classes["price"]} ${classes["actual-price"]}`}>
+          {" "}
+          &#8377; 18,500{" "}
+        </span>
+        at just{" "}
         <span className={`${classes["price"]} ${classes["price--highlight"]}`}>
-          &#8377; 99{" "}
+          &#8377; {finalPrice}{" "}
         </span>
         per year
       </h1>

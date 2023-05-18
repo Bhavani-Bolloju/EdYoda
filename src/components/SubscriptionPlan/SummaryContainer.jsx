@@ -39,9 +39,7 @@ function SummaryContainer() {
           <span>Total</span>
           <span>(Incl. of 18% GST)</span>
         </div>
-        <span className={classes["price-summary__total-right"]}>
-          &#8377;149
-        </span>
+        <span className={classes["price-summary__total-right"]}>&#8377;99</span>
       </div>
     </div>
   );

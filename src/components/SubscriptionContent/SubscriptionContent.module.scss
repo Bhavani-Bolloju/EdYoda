@@ -10,6 +10,26 @@
     font-weight: 600;
     font-family: var(--font-primary);
 
+    .actual-price {
+      color: "red";
+      position: relative;
+      display: inline-block;
+      margin-right: 1rem;
+
+      &::before {
+        content: "";
+        border-bottom: 2px solid red;
+        display: inline-block;
+        background-color: red;
+        width: 20rem;
+        height: 4px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        z-index: 50;
+      }
+    }
+
     .price {
       font-family: var(--font-secondary);
       &--highlight {
