@@ -31,6 +31,12 @@
     var(--text-color-7) 90%
   );
 
+  --hover-primary-color: linear-gradient(
+    -120deg,
+    var(--text-color-6) 70%,
+    var(--text-color-7) 90%
+  );
+
   --disable-color: #e7e7e7;
   --alert-text-color: #de4313;
 }

@@ -19,6 +19,18 @@
     -webkit-background-clip: text;
     color: transparent;
   }
+
+  .option {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 2rem;
+
+    svg {
+      width: 2rem;
+    }
+  }
+
   &__options {
     text-transform: capitalize;
   }
@@ -61,6 +73,10 @@
   font-weight: 500;
   font-size: 1.6rem;
 
+  &:hover {
+    cursor: pointer;
+  }
+
   &--primary {
     text-transform: uppercase;
     font-weight: 700;
@@ -68,5 +84,12 @@
     padding: 1rem 4.2rem;
     border-radius: 5rem;
     color: var(--text-color-5);
+    transition: all 0.2s;
+
+    &:hover {
+      background: var(--hover-primary-color);
+      transform: translateY(-2px);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
   }
 }
