@@ -56,6 +56,16 @@ function TextField({
           pricePerMonth={pricePerMonth}
         />
       </label>
+      {status === "expired" && (
+        <div className={`${classes["tag"]} ${classes["tag--expired"]}`}>
+          Offer expired
+        </div>
+      )}
+      {totalPrice == "179" && (
+        <div className={`${classes["tag"]} ${classes["tag--recommended"]}`}>
+          Recommended
+        </div>
+      )}
     </div>
   );
 }

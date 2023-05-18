@@ -3,7 +3,7 @@
     width: 100%;
     display: flex;
     border: 2px solid var(--text-color-3);
-    padding: 1.2rem 1.5rem;
+    padding: 1.8rem 1.5rem;
     border-radius: 0.5rem;
     gap: 1rem;
     position: relative;
@@ -112,5 +112,27 @@
         cursor: pointer;
       }
     }
+  }
+}
+.tag {
+  font-size: 1.2rem;
+  padding: 0.2rem 2rem;
+  position: absolute;
+  top: 0;
+  background-color: red;
+  // color: red;
+  left: 12%;
+  text-align: center;
+  color: var(--text-color-5);
+  font-weight: 500;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+
+  &--expired {
+    background-color: var(--danger-color-1);
+  }
+
+  &--recommended {
+    background-color: var(--success-color-1);
   }
 }

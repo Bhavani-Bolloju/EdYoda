@@ -10,8 +10,6 @@ function Main() {
     setPriceAfterDiscount(price);
   };
 
-  console.log(priceAfterDiscount);
-
   return (
     <main className={classes.main}>
       <SubscriptionContent finalPrice={priceAfterDiscount} />
